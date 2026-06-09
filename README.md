@@ -66,7 +66,7 @@ pip install nibabel
 
 ---
 
-# STEP 1 â€” Extract SCAN network from CIFTI label file
+# STEP 1: Extract SCAN network from CIFTI label file
 
 ```powershell
 cd C:\Users\solei039\Downloads\workbench-windows64-v2.1.0\workbench\bin_windows64
@@ -78,7 +78,7 @@ cd C:\Users\solei039\Downloads\workbench-windows64-v2.1.0\workbench\bin_windows6
 
 ---
 
-# STEP 2 â€” Separate SCAN into left/right fsLR metrics
+# STEP 2: Separate SCAN into left/right fsLR metrics
 
 ```powershell
 .\wb_command.exe -cifti-separate "C:\Users\solei039\Documents\Motormapping\sub-CLM07_SCAN18.dscalar.nii" COLUMN -metric CORTEX_LEFT "C:\Users\solei039\Documents\Motormapping\sub-CLM07_SCAN18_L.func.gii" -metric CORTEX_RIGHT "C:\Users\solei039\Documents\Motormapping\sub-CLM07_SCAN18_R.func.gii"
@@ -86,7 +86,7 @@ cd C:\Users\solei039\Downloads\workbench-windows64-v2.1.0\workbench\bin_windows6
 
 ---
 
-# STEP 3 â€” Convert SimNIBS overlays to GIFTI
+# STEP 3: Convert SimNIBS overlays to GIFTI
 
 ```python
 import nibabel as nib
@@ -114,7 +114,7 @@ save_gifti(rh_file, rh_out)
 
 ---
 
-# STEP 4 â€” Resample SimNIBS E-fields from fsaverage 164k â†’ fsLR 32k
+# STEP 4: Resample SimNIBS E-fields from fsaverage 164k â†’ fsLR 32k
 
 ## LEFT hemisphere
 
@@ -130,7 +130,7 @@ save_gifti(rh_file, rh_out)
 
 ---
 
-# STEP 5 â€” Dice overlap calculation in MATLAB
+# STEP 5: Dice overlap calculation in MATLAB
 
 ```matlab
 clear; clc;
