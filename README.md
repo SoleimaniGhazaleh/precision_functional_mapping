@@ -114,7 +114,7 @@ save_gifti(rh_file, rh_out)
 
 ---
 
-# STEP 4: Resample SimNIBS E-fields from fsaverage 164k â†’ fsLR 32k
+# STEP 4: Resample SimNIBS E-fields from fsaverage 164k fsLR 32k
 
 ## LEFT hemisphere
 
